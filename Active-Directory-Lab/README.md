@@ -80,6 +80,7 @@ DHCP: Configured on DC01
 
 ## Screenshots
 ![Server Manager Dashboard](./Screenshots/server-manager-dashboard.png)
+![Active Directory Users and Computers](./Screenshots/ad-ou-structure.png)
 
 ## Key Learnings
 
