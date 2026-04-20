@@ -79,8 +79,7 @@ DHCP: Configured on DC01
 - Troubleshooting using Event Viewer and GPO tools
 
 ## Screenshots
-
-*[Add screenshots here - see Step 6 below]*
+![Server Manager Dashboard](./screenshots/server-manager-dashboard.png)
 
 ## Key Learnings
 
