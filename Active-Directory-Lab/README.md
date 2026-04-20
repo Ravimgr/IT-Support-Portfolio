@@ -18,20 +18,20 @@ Built a complete Windows Server 2022 Active Directory domain environment to simu
 │            testlab.local Domain                     │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
-│  ┌──────────────────┐      ┌──────────────────┐  │
-│  │      DC01        │      │       PC01       │  │
-│  │ Windows Server   │◄────►│   Windows 11     │  │
-│  │     2022         │      │      Pro         │  │
-│  │                  │      │                  │  │
-│  │ • Domain Ctrl    │      │ • Domain Joined  │  │
-│  │ • DNS Server     │      │ • GPO Enforced   │  │
-│  │ • DHCP Server    │      │ • Mapped Drives  │  │
-│  │ • File Server    │      │ • Roaming Profile│  │
-│  └──────────────────┘      └──────────────────┘  │
+│  ┌──────────────────┐      ┌──────────────────┐     │
+│  │      DC01        │      │       PC01       │     │
+│  │ Windows Server   │◄────►│   Windows 11     │     │
+│  │     2022         │      │      Pro         │     │
+│  │                  │      │                  │     │
+│  │ • Domain Ctrl    │      │ • Domain Joined  │     │
+│  │ • DNS Server     │      │ • GPO Enforced   │     │
+│  │ • DHCP Server    │      │ • Mapped Drives  │     │
+│  │ • File Server    │      │ • Roaming Profile│     │
+│  └──────────────────┘      └──────────────────┘     │
 │                                                     │
-│  Network: NAT Network (10.0.2.0/24)               │
-│  DNS: Integrated with AD DS                        │
-│  DHCP: Automatic IP Assignment                     │
+│  Network: NAT Network (10.0.2.0/24)                 │
+│  DNS: Integrated with AD DS                         │
+│  DHCP: Automatic IP Assignment                      │
 └─────────────────────────────────────────────────────┘
 ```
 
