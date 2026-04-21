@@ -25,14 +25,14 @@ Network: 10.0.2.0/24 (NAT Network)
 
 ┌─────────────────────────────────────────────┐
 │                                             │
-│  DC01 (Domain Controller)                  │
-│  IP: 10.0.2.10 (Static)                    │
+│  DC01 (Domain Controller)                   │
+│  IP: 10.0.2.10 (Static)                     │
 │                                             │
 │  Services:                                  │
-│  • DNS Server (Primary)                    │
-│  • DHCP Server                             │
-│  • Active Directory Domain Services        │
-│  • Domain: company.local                   │
+│  • DNS Server (Primary)                     │
+│  • DHCP Server                              │
+│  • Active Directory Domain Services         │
+│  • Domain: testlab.local                    │
 │                                             │
 └──────────────┬──────────────────────────────┘
                │
@@ -58,7 +58,7 @@ Network: 10.0.2.0/24 (NAT Network)
 ### DNS Server Configuration
 
 **Primary DNS Zone:**
-- **Zone Name:** company.local
+- **Zone Name:** testlab.local
 - **Zone Type:** Active Directory-integrated
 - **Dynamic Updates:** Secure only (domain members can update)
 - **Aging/Scavenging:** Enabled (14-day interval)
@@ -66,17 +66,17 @@ Network: 10.0.2.0/24 (NAT Network)
 **DNS Records Created:**
 ```
 A Records:
-dc01.company.local          → 10.0.2.10
-pc01.company.local          → 10.0.2.100
-pc02.company.local          → 10.0.2.101
+dc01.testlab.local          → 10.0.2.10
+pc01.testlab.local          → 10.0.2.100
+pc02.testlab.local          → 10.0.2.101
 
 SRV Records (AD-integrated):
-_ldap._tcp.company.local    → dc01.company.local
-_kerberos._tcp.company.local → dc01.company.local
-_gc._tcp.company.local      → dc01.company.local
+_ldap._tcp.testlab.local    → dc01.testlab.local
+_kerberos._tcp.testlab.local → dc01.testlab.local
+_gc._tcp.testlab.local      → dc01.testlab.local
 
 PTR Records (Reverse Lookup):
-10.0.2.10 → dc01.company.local
+10.0.2.10 → dc01.testlab.local
 ```
 
 **Forwarders Configured:**
@@ -101,13 +101,13 @@ DNS Servers:
 Primary: 10.0.2.10 (DC01)
 Secondary: 8.8.8.8 (Google)
 
-Domain Name: company.local
+Domain Name: testlab.local
 ```
 
 **DHCP Options Configured:**
 - **Option 003:** Router (Default Gateway) = 10.0.2.1
 - **Option 006:** DNS Servers = 10.0.2.10
-- **Option 015:** DNS Domain Name = company.local
+- **Option 015:** DNS Domain Name = testlab.local
 - **Option 044:** WINS/NetBIOS Name Servers = 10.0.2.10
 
 **Exclusions:**
@@ -137,11 +137,11 @@ ipconfig /all
    - Gateway: 10.0.2.1 ✓
    - DNS: 10.0.2.10 ✓
 
-ping dc01.company.local
+ping dc01.testlab.local
    - Reply from 10.0.2.10 ✓
 
-nslookup company.local
-   - Server: dc01.company.local
+nslookup testlab.local
+   - Server: dc01.testlab.local
    - Address: 10.0.2.10 ✓
 ```
 
@@ -150,7 +150,7 @@ nslookup company.local
 Settings → System → About → Advanced system settings
 Computer Name tab → Change
    - Member of: Domain
-   - Domain: company.local
+   - Domain: testlab.local
    - Enter domain admin credentials
    - Restart required
 ```
@@ -158,10 +158,10 @@ Computer Name tab → Change
 3. **Verify Domain Join:**
 ```cmd
 systeminfo | findstr /B "Domain"
-   Output: Domain: company.local ✓
+   Output: Domain: testlab.local ✓
 
 whoami
-   Output: COMPANY\username ✓
+   Output: TESTLAB\username ✓
 ```
 
 **Result:** Client successfully joined to domain! ✅
