@@ -16,7 +16,6 @@ I'm passionate about IT infrastructure and helping users solve technical problem
 - 📍 **Location:** London, United Kingdom
 - 📧 **Email:** iamrtmfd@gmail.com
 - 💼 **LinkedIn:** [linkedin.com/in/thapa-ravi](https://www.linkedin.com/in/thapa-ravi/)
-- 📱 **Phone:** 07887691419
 - 🎓 **Certification:** CompTIA A+ (September 2025)
 - 🔧 **Currently Learning:** Microsoft 365 Administration
 
@@ -175,12 +174,6 @@ Relevant Coursework: Computer Networks, Operating Systems, Database Management, 
 
 ---
 
-## 📊 GitHub Statistics
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Ravimgr&show_icons=true&theme=default)
-
----
-
 ## 📈 Current Learning Goals
 
 - ☑️ CompTIA A+ Certification (Completed ✅)
@@ -213,7 +206,6 @@ IT-Portfolio/
 ├── PowerShell-Scripts/         # Automation scripts & module
 ├── IT-Support-Simulations/     # Helpdesk practice documentation
 ├── Network-Lab/                # Networking configuration
-├── Certifications/             # Certificates & achievements
 └── README.md                   # This file
 ```
 
