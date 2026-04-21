@@ -66,7 +66,7 @@ New-CompanyADUser -FirstName "John" -LastName "Smith" -Department "IT Department
 #   Full Name: John Smith
 #   Department: IT Department
 #   Job Title: IT Technician
-#   Email: john.smith@company.local
+#   Email: john.smith@testlab.local
 #   Temp Password: Welcome123!@#
 #   ✓ Added to group: IT Support Team
 ```
@@ -421,7 +421,7 @@ New-CompanyADUser -FirstName "John" -LastName "Doe" -Department "IT Department"
 
 ```powershell
 # Clone or download repository
-git clone https://github.com/[your-username]/IT-Portfolio.git
+git clone https://github.com/Ravimgr/IT-Support-Portfolio.git
 
 # Navigate to module
 cd IT-Portfolio/PowerShell-Scripts/CompanyADTools
@@ -543,13 +543,6 @@ Reset-DepartmentPasswords -Department "Test Department"
 - [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 - [Active Directory PowerShell Module](https://docs.microsoft.com/en-us/powershell/module/activedirectory/)
 - [About Comment-Based Help](https://docs.microsoft.com/en-us/powershell/scripting/developer/help/examples-of-comment-based-help)
-
-### Recommended Reading
-- "Learn PowerShell in a Month of Lunches" by Don Jones
-- "PowerShell for Sysadmins" by Adam Bertram
-- Microsoft Virtual Academy: PowerShell courses
-
----
 
 ## 🔗 Related Projects
 
