@@ -348,7 +348,7 @@ Most Queried:
 *DNS forward lookup zone for testlab.local*
 
 ### DHCP Configuration
-![DHCP Scope](./screenshots/dhcp-scope-overview.png)
+![DHCP Scope](./screenshots/dhcp-address-pool.png)
 *DHCP scope configuration with address pool*
 
 ![DHCP Leases](./screenshots/dhcp-active-leases.png)
