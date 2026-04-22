@@ -154,7 +154,7 @@ Configured DNS, DHCP, and domain joining with Group Policy verification.
 
 ### CompTIA A+ (Core 1 & Core 2)
 **Issued:** September 2025  
-[View Certification](https://www.credly.com/badges/f3eecd22-bf89-465c-878f-573f699442b1/linked_in_profile)
+[View Certification →](https://www.credly.com/badges/f3eecd22-bf89-465c-878f-573f699442b1/linked_in_profile)
 
 **Topics Covered:**
 - Hardware & Networking
