@@ -41,14 +41,14 @@ Network: 10.0.2.0/24 (NAT Network)
                ├─────────────────────────┐
                │                         │
     ┌──────────▼──────────┐   ┌─────────▼──────────┐
-    │   PC01              │   │   PC02              │
-    │   Windows 11 Pro    │   │   Windows 11 Pro    │
-    │   IP: DHCP          │   │   IP: DHCP          │
-    │   (10.0.2.100-150)  │   │   (10.0.2.100-150)  │
-    │                     │   │                     │
-    │   • Domain Joined   │   │   • Domain Joined   │
-    │   • GPO Enforced    │   │   • GPO Enforced    │
-    └─────────────────────┘   └─────────────────────┘
+    │   PC01              │   │   PC02             │
+    │   Windows 11 Pro    │   │   Windows 11 Pro   │
+    │   IP: DHCP          │   │   IP: DHCP         │
+    │   (10.0.2.100-150)  │   │   (10.0.2.100-150) │
+    │                     │   │                    │
+    │   • Domain Joined   │   │   • Domain Joined  │
+    │   • GPO Enforced    │   │   • GPO Enforced   │
+    └─────────────────────┘   └────────────────────┘
 ```
 
 ---
@@ -344,24 +344,21 @@ Most Queried:
 ## 📸 Screenshots
 
 ### DNS Configuration
-![DNS Manager](./screenshots/dns-manager.png)
-*DNS forward lookup zone for company.local*
-
-![DNS Records](./screenshots/dns-records.png)
-*A records and SRV records for domain services*
+![DNS Manager](./screenshots/dns-forward-lookup-zone.png)
+*DNS forward lookup zone for testlab.local*
 
 ### DHCP Configuration
-![DHCP Scope](./screenshots/dhcp-scope.png)
+![DHCP Scope](./screenshots/dhcp-scope-overview.png)
 *DHCP scope configuration with address pool*
 
 ![DHCP Leases](./screenshots/dhcp-active-leases.png)
 *Active DHCP leases showing client assignments*
 
 ### Client Configuration
-![Client IP Config](./screenshots/client-ipconfig.png)
+![Client IP Config](./screenshots/client-ipconfig-all.png)
 *ipconfig /all showing DHCP-assigned configuration*
 
-![Domain Verification](./screenshots/domain-joined-verification.png)
+![Domain Verification](./screenshots/client-domain-joined.png)
 *Client successfully joined to domain*
 
 ---
